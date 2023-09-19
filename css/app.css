@@ -95,30 +95,60 @@ figure > img {
     display: flex;
     flex-direction: column;
 }
-
+/* APP CONTENT */
 .app-content {
     flex-grow: 1;
     overflow: auto;
     background-color: var(--dark-blue);
     display: flex;
 }
-
+/* APP TOOLBAR */
 .app-toolbar {
     flex-shrink: 0;
     background-color: var(--gray);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-items {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+/* APP MENU */
+.app-menu {
+    min-width: 50px;
+    background-color: #000000;
+}
+/* APP BODY */
+.app-body {
     padding: 40px;
+    border: 2px solid yellow;
+    flex-grow: 1;
 }
 
 
 
+
 /* RESPONSIVE */
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+    .app-menu {
+        min-width: 230px;
+        flex-shrink: 0;
+    }
+ }
 
 
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+
+ }
 
 
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+
+ }
 
 
 @media (min-width: 1200px) { ... }
@@ -148,14 +178,4 @@ figure > img {
     border: 1px solid red;
 }
 
-.debug .app-menu {
-    padding: 40px;
-    border: 2px solid yellow;
-    background-color: #000000;
-}
 
-.debug .app-body {
-    padding: 40px;
-    border: 2px solid yellow;
-    flex-grow: 1;
-}
