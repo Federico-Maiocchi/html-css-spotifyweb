@@ -109,15 +109,18 @@ figure > img {
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* TOOLBAR-MENU */
 .toolbar-menu {
-    padding: 10px;
+    padding: 0px 5px;
     display: flex;
     color: white;
     align-items: center;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 160px;
 }
 
 .toolbar-img {
@@ -126,18 +129,19 @@ figure > img {
 
 .menu-title {
     color: white;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .menu-opa {
     opacity: 0.7;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* TOOLBAR PLAYER */
 .toolbar-player {
     width: 50%;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 .player-items {
@@ -164,7 +168,6 @@ figure > img {
 .timer {
     color: white;
     font-size: 12px;
-    width: 15px;
 }
 
 .time-bar {
@@ -184,6 +187,23 @@ figure > img {
     height: 4px;
 }
 
+/* TOOLBAR SOUND  */
+.toolbar-sound {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    width: 160px;
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+
+
 
 
 /* APP MENU */
@@ -191,6 +211,11 @@ figure > img {
     min-width: 50px;
     background-color: #000000;
 }
+
+
+
+
+
 /* APP BODY */
 .app-body {
     padding: 40px;
@@ -203,27 +228,44 @@ figure > img {
 
 /* RESPONSIVE */
 @media (min-width: 576px) {
+    
     .app-menu {
         min-width: 230px;
         flex-shrink: 0;
     }
+
+
+
  }
 
 
 @media (min-width: 768px) {
 
+    .menu-icon { 
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .toolbar-menu {
+        width: 210px;
+    }
  }
 
 
 @media (min-width: 992px) {
+    
 
  }
 
 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+
+ }
 
 
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) {
+
+ }
 
 /* DEBUG */
 /* .debug .container,
