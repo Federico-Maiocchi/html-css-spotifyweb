@@ -111,10 +111,29 @@ figure > img {
     justify-content: space-between;
 }
 
+/* TOOLBAR PLAYER */
+.toolbar-player {
+    padding: 10px;
+}
+
 .player-items {
     display: flex;
-    padding: 15px;
+    padding: 5px;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-item {
+   font-size: 25px;
+   margin: 0px 10px;
+}
+
+.player-time {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
 }
 
 /* APP MENU */
