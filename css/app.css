@@ -102,6 +102,36 @@ figure > img {
     background-color: var(--dark-blue);
     display: flex;
 }
+
+.app-menu-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.app-menu-img {
+    width: 28px;
+}
+
+.profile {
+    background-color: grey ;
+    border-radius: 20px;
+    width: 24px;
+
+}
+
+
+
+/* .app-menu-top {
+    background-color: red;
+    padding: 20px;
+} */
+
+
+
 /* APP TOOLBAR */
 .app-toolbar {
     flex-shrink: 0;
@@ -146,7 +176,6 @@ figure > img {
 
 .player-items {
     display: flex;
-    padding: 5px;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -158,10 +187,13 @@ figure > img {
    margin: 0px 10px;
 }
 
+/* PLAYER BAR */
 .player-time {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+    font-weight: 600;
     gap: 10px;  
 }
 
@@ -254,7 +286,9 @@ figure > img {
 
 @media (min-width: 992px) {
     
-
+    .player-time {
+        gap: 25px;
+    }
  }
 
 
