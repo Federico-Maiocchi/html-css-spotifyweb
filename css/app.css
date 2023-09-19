@@ -1,4 +1,4 @@
-* Default settings */
+/* Default settings */ 
 * {
     margin: 0;
     padding: 0;
@@ -30,20 +30,17 @@ figure > img {
     display: block;
 }
 
-*[class^='col-'] {
+/* *[class^='col-'] {
     padding: 20px;
-}
+} */
 
 /* palette colori */
 
 :root {
-    --blue:#0084FD;
-    --light-blue:#B5DDFF;
-    --purple:#9792E4;
-    --yellow:#FDC15F;
-    --dark-grey:#333333;
-    --light:#FFFFFF;
-
+    --dark:#000000;
+    --gray:#282828;
+    --dark-blue:#141922;
+    --light:#ffff;
 }
 
 /* layouts */
@@ -66,7 +63,7 @@ figure > img {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* 
 .col-2 {
     flex-basis: calc((100% / 12) * 2);
 }
@@ -89,7 +86,26 @@ figure > img {
 
 .col-12 {
     flex-basis: calc((100% / 12) * 12);
+} */
+
+/* APP */
+.app {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+.app-content {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.app-toolbar {
+    flex-shrink: 0;
+    background-color: var(--gray);
+}
+   
 
 /* RESPONSIVE */
 @media (min-width: 576px) { ... }
@@ -107,3 +123,24 @@ figure > img {
 @media (min-width: 1400px) { ... }
 
 /* DEBUG */
+/* .debug .container,
+.debug .container-medium,
+.debug .container-small  {
+    border: 1px solid var(--yellow);
+    padding: 10px;
+}
+
+.debug .row {
+    border: 1px solid var(--purple);
+    padding: 10px;
+}
+
+.debug [class^="col"] {
+    border: 1px solid orange;
+    padding: 10px;
+} */
+
+.debug .app > * {
+    min-height: 100px;
+    border: 1px solid red;
+}
