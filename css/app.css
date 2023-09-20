@@ -30,6 +30,9 @@ figure > img {
     display: block;
 }
 
+.display-none {
+    display: none;
+}
 /* *[class^='col-'] {
     padding: 20px;
 } */
@@ -41,6 +44,9 @@ figure > img {
     --gray:#282828;
     --dark-blue:#141922;
     --light:#ffff;
+    --lightgreen: greenyellow;
+
+    --time-bar:25%;
 }
 
 /* layouts */
@@ -98,11 +104,12 @@ figure > img {
 /* APP CONTENT */
 .app-content {
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden;
     background-color: var(--dark-blue);
     display: flex;
 }
 
+/* APP MENU */
 .app-menu-flex {
     display: flex;
     flex-direction: column;
@@ -112,25 +119,65 @@ figure > img {
     padding: 10px 0px;
 }
 
-.app-menu-img {
+.app-figure-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.logo {
     width: 28px;
+    margin-bottom: 10px;
+}
+
+.text-img  {
+    color: white;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.app-menu-img {
+    width: 26px;
+    aspect-ratio: 1;
+}
+
+.download {
+    width: 18px;
+    margin-bottom: 15px;
 }
 
 .profile {
     background-color: grey ;
     border-radius: 20px;
-    width: 24px;
-
+    aspect-ratio: 1;
+    overflow: hidden;
+    width: 25px;
 }
 
+.profile img {
+    aspect-ratio: 1;
+    display: block;
+    object-fit: cover;
+    font-size: 28px;
+}
+/* PLAYLIST */
+.title-section {
+    color: white;
+    text-transform: uppercase;
+}
 
+.plus-playlist {
+    background-color: gray;
+    color: #000000;
+    font-size: 50px;
+}
 
-/* .app-menu-top {
-    background-color: red;
-    padding: 20px;
-} */
-
-
+.grey {
+    color: white;
+    opacity: 0.7;
+}
 
 /* APP TOOLBAR */
 .app-toolbar {
@@ -210,13 +257,33 @@ figure > img {
 .time-bar-white {
     background-color: white;
     height: 4px;
-    width: 25%;
+    width: var(--time-bar);
     position: absolute;
 }
 
 .time-bar-gray {
     background-color: grey;
     height: 4px;
+}
+
+.time-hand {
+    width: 14px;
+    height: 14px;
+    border-radius: 22px;
+    background-color: white;
+    position: absolute;
+    left: var(--time-bar);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.time-bar:hover .time-hand {
+    display: block;
+}
+
+.time-bar:hover .time-bar-white {
+    background-color: var(--lightgreen) ;
 }
 
 /* TOOLBAR SOUND  */
@@ -266,12 +333,36 @@ figure > img {
         flex-shrink: 0;
     }
 
+    .logo-small {
+        display: none;
+    }
 
+    .logo {
+        width: 138px;
+        margin-bottom: 10px;
+        aspect-ratio: 1 / 0.5;
+    }
+
+
+    .display-none {
+        display: inline-block;
+        white-space: nowrap;
+    }
+    
+    .app-menu-img {
+        display: flex;
+
+    }
+
+    .app-menu-flex {
+        align-items: flex-start;
+        padding: 10px 16px;
+    }
 
  }
 
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
 
     .menu-icon { 
         display: inline-block;
@@ -279,8 +370,23 @@ figure > img {
     }
 
     .toolbar-menu {
-        width: 210px;
+        width: 230px;
+        justify-content: space-between;
     }
+
+    .toolbar-img {
+        width: 45px;
+    }
+
+    .menu-title {
+        font-size: 16px;
+    }
+
+    .menu-opa {
+        font-size: 14px;
+    }
+
+    
  }
 
 

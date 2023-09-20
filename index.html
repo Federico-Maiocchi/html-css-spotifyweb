@@ -12,26 +12,51 @@
     <div class="app">
         <!-- start app content -->
         <main class="app-content">
-            <!-- start menu -->
+            <!-- start app menu -->
             <aside class="app-menu">
                 <div class="app-menu-flex">
-                    <div>
-                        <figure class="app-menu-img">
-                            <img class="logo-small" src="./img/logo-small.svg" alt="logo">
+                    <div class="app-figure-container">
+                        <figure class="app-menu-img logo">
+                            <img class="logo-small" src="./img/logo-small.svg" alt="logo small">
+                            <img class="logo-big display-none" src="./img/logo.svg" alt="logo big">
                         </figure>
                         <figure class="app-menu-img">
                            <img src="./img/home.svg" alt="home">
+                           <span class="text-img display-none">Home</span>
                         </figure>
                         <figure class="app-menu-img">
                            <img src="./img/search.svg" alt="search">
+                           <span class="text-img display-none">Cerca</span>
                         </figure>
                         <figure class="app-menu-img">
                             <img src="./img/libreria.svg" alt="libreria">
+                            <span class="text-img display-none">La tua libreria</span>
                         </figure>
+                        <div class="playlist">
+                            <div>
+                                <h4 class="title-section">playlist</h4>
+                            </div>
+                            <div>
+                                <span class="plus-playlist">
+                                    <i class="fa-solid fa-plus" style="color: #030303;"></i>
+                                </span>
+                                <span class="grey">Crea Playlist</span>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="grey">nuova playlist</li>
+                                    <li class="grey">nuova playlist</li>
+                                    <li class="grey">nuova playlist</li>
+                                    <li class="grey">nuova playlist</li>
+                                    <li class="grey">nuova playlist</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <figure class="app-menu-img">
+                    <div class="app-figure-container">
+                        <figure class="app-menu-img download">
                             <img src="./img/download.svg" alt="download">
+                            <div class="text-img display-none">installa app</div>
                         </figure>
                         <figure class="app-menu-img profile">
                             <img src="./img/profile.svg" alt="profile">
@@ -78,6 +103,7 @@
                     <div class="time-bar">
                         <div class="time-bar-white"></div>
                         <div class="time-bar-gray"></div>
+                        <div class="time-hand"></div>
                     </div>
                     <span class="timer">4:35</span>
                 </div>
@@ -95,7 +121,8 @@
                 </div>
                 <div class="time-bar">
                     <div class="time-bar-white"></div>
-                    <div class="time-bar-gray"></div>   
+                    <div class="time-bar-gray"></div>
+                    <div class="time-hand"></div>   
                 </div>
             </div>
         </aside>
