@@ -94,6 +94,8 @@ figure > img {
     flex-basis: calc((100% / 12) * 12);
 } */
 
+
+/* ------------------------------ */
 /* APP */
 .app {
     height: 100vh;
@@ -101,6 +103,8 @@ figure > img {
     display: flex;
     flex-direction: column;
 }
+
+/* ------------------------------ */
 /* APP CONTENT */
 .app-content {
     flex-grow: 1;
@@ -109,6 +113,7 @@ figure > img {
     display: flex;
 }
 
+/* ------------------------------ */
 /* APP MENU */
 .app-menu {
     min-width: 50px;
@@ -228,7 +233,68 @@ figure > img {
     opacity: 0.7;
 }
 
+/* ------------------------------ */
+/* APP BODY */
+.app-body {
+    border: 2px solid yellow;
+    flex-grow: 1;
+    overflow: auto;
+}
 
+/* upgrade */
+.upgrade-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 10px 25px 0px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+.upgrade-button {
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    line-height: 40px;
+}
+
+/* ranking */
+.ranking-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+.ranking-item {
+    color: white;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* album */
+.album, 
+.album-flex,
+.col-album {
+    flex-basis: 50%;
+    padding: 5px;
+}
+
+.album-title {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+
+/* ------------------------------ */
 /* APP TOOLBAR */
 .app-toolbar {
     flex-shrink: 0;
@@ -346,73 +412,11 @@ figure > img {
     padding: 0px 5px;
 }
 
-
-
-
-
-
-/* APP BODY */
-.app-body {
-    border: 2px solid yellow;
-    flex-grow: 1;
-    overflow: auto;
-}
-
-/* upgrade */
-.upgrade-bar {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px 25px 0px;
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    top: 0;
-}
-
-.upgrade-button {
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
-    text-transform: uppercase;
-    padding: 0px 35px;
-    line-height: 40px;
-}
-
-/* ranking */
-
-.ranking-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px 0px 15px 0px;
-}
-
-.ranking-item {
-    color: white;
-    opacity: 0.7;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px;
-}
-
-/* album */
-.album, 
-.album-flex,
-.col-album {
-    flex-basis: 50%;
-    padding: 5px;
-}
-
-.album-title {
-    font-size: 22px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 800;
-}
+/* ------------------------------ */
 /* RESPONSIVE */
 @media (min-width: 576px) {
     
+    /* app menu */
     .app-menu {
         min-width: 230px;
         flex-shrink: 0;
@@ -451,6 +455,7 @@ figure > img {
 
 @media (min-width: 700px) {
 
+    /* app menu */
     .menu-icon { 
         display: inline-block;
         margin-right: 10px;
@@ -473,6 +478,7 @@ figure > img {
         font-size: 14px;
     }
 
+    /* app body */
     .album-flex .col-album {
         flex-basis: calc((100% / 12) * 3);
     }
@@ -482,10 +488,12 @@ figure > img {
 
 @media (min-width: 992px) {
     
+    /* app-toolbar */
     .player-time {
         gap: 25px;
     }
 
+    /* app body */
     .album-flex .col-album {
         flex-basis: calc((100% / 12) * 2);
     }
