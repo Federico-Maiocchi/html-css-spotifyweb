@@ -110,6 +110,11 @@ figure > img {
 }
 
 /* APP MENU */
+.app-menu {
+    min-width: 50px;
+    background-color: #000000;
+}
+
 .app-menu-flex {
     display: flex;
     flex-direction: column;
@@ -148,7 +153,7 @@ figure > img {
 }
 .download {
     width: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
 }
 
 
@@ -156,6 +161,16 @@ figure > img {
     margin-left: 15px;
     font-size: 12px;
 }
+
+.border-line::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: grey;
+    margin-bottom: 15px;
+    margin-left: 2px;
+} 
 
 .profile {
     background-color: grey ;
@@ -176,6 +191,8 @@ figure > img {
     color: white;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 
@@ -198,7 +215,7 @@ figure > img {
 .new-playlist {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     font-size: 13px;
 }
 
@@ -334,26 +351,14 @@ figure > img {
 
 
 
-
-
-
-
-/* APP MENU */
-.app-menu {
-    min-width: 50px;
-    background-color: #000000;
-}
-
-
-
-
-
 /* APP BODY */
 .app-body {
     padding: 40px;
     border: 2px solid yellow;
     flex-grow: 1;
 }
+
+
 
 
 
@@ -380,6 +385,7 @@ figure > img {
     .display-none {
         display: inline-block;
         white-space: nowrap;
+        font-size: 14px;
     }
     
     .app-menu-img {
@@ -459,8 +465,5 @@ figure > img {
     padding: 10px;
 } */
 
-.debug .app > * {
-    border: 1px solid red;
-}
 
 
