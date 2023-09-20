@@ -355,6 +355,7 @@ figure > img {
 .app-body {
     border: 2px solid yellow;
     flex-grow: 1;
+    overflow: auto;
 }
 
 /* upgrade */
@@ -517,6 +518,7 @@ figure > img {
     background-color: aqua;
     
 }
+
 
 .debug .album-flex {
     display: flex;
