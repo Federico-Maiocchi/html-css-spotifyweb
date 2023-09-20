@@ -359,8 +359,8 @@ figure > img {
 
 /* upgrade */
 .upgrade-bar {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 10px 25px 0px;
     display: flex;
     justify-content: flex-end;
 }
@@ -374,7 +374,24 @@ figure > img {
     line-height: 40px;
 }
 
+/* ranking */
 
+.ranking-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+.ranking-item {
+    color: white;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
 
 
 /* RESPONSIVE */
