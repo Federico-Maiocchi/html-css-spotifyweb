@@ -143,9 +143,18 @@ figure > img {
     aspect-ratio: 1;
 }
 
+.library {
+    margin-bottom: 10px;
+}
 .download {
     width: 18px;
     margin-bottom: 15px;
+}
+
+
+.margin-left-text {
+    margin-left: 15px;
+    font-size: 12px;
 }
 
 .profile {
@@ -166,18 +175,42 @@ figure > img {
 .title-section {
     color: white;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.added-playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .plus-playlist {
     background-color: gray;
     color: #000000;
-    font-size: 50px;
+    font-size: 20px;
+    padding: 5px 5px;
+    aspect-ratio: 1;
+    margin-right: 10px;
+}
+
+.new-playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.added-text {
+    font-size: 15px;
 }
 
 .grey {
     color: white;
     opacity: 0.7;
 }
+
 
 /* APP TOOLBAR */
 .app-toolbar {
@@ -351,6 +384,7 @@ figure > img {
     
     .app-menu-img {
         display: flex;
+        align-items: center;
 
     }
 
