@@ -360,10 +360,12 @@ figure > img {
 
 /* upgrade */
 .upgrade-bar {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 15px 10px 25px 0px;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
 }
 
 .upgrade-button {
