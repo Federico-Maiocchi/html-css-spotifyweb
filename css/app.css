@@ -353,12 +353,26 @@ figure > img {
 
 /* APP BODY */
 .app-body {
-    padding: 40px;
     border: 2px solid yellow;
     flex-grow: 1;
 }
 
+/* upgrade */
+.upgrade-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.upgrade-button {
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    line-height: 40px;
+}
 
 
 
