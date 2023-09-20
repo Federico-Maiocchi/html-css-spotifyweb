@@ -393,7 +393,13 @@ figure > img {
     padding: 10px;
 }
 
-
+/* album */
+.album, 
+.album-flex,
+.col-album {
+    flex-basis: 50%;
+    padding: 5px;
+}
 /* RESPONSIVE */
 @media (min-width: 576px) {
     
@@ -457,6 +463,9 @@ figure > img {
         font-size: 14px;
     }
 
+    .album-flex .col-album {
+        flex-basis: calc((100% / 12) * 3);
+    }
     
  }
 
@@ -466,6 +475,11 @@ figure > img {
     .player-time {
         gap: 25px;
     }
+
+    .album-flex .col-album {
+        flex-basis: calc((100% / 12) * 2);
+    }
+    
  }
 
 
@@ -498,3 +512,33 @@ figure > img {
 
 
 
+.debug .col {
+    border: 1px solid red;
+    background-color: aqua;
+    
+}
+
+.debug .album-flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+
+.debug .card-album {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+
+}
+
+.debug .card-title {
+    color: white;
+    font-size: 15px;
+}
+
+.debug .card-subtitle {
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+}
