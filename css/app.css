@@ -236,19 +236,26 @@ figure > img {
 /* ------------------------------ */
 /* APP BODY */
 .app-body {
-    border: 2px solid yellow;
     flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-body {
     overflow: auto;
+    height: 100%;
 }
 
 /* upgrade */
 .upgrade-bar {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px 25px 0px;
+    padding: 15px 26px 25px 0px;
     display: flex;
     justify-content: flex-end;
-    position: sticky;
+    position: absolute;
     top: 0;
+    right: 0;
+    left: 0;
 }
 
 .upgrade-button {
@@ -256,11 +263,15 @@ figure > img {
     border-radius: 20px;
     color: white;
     text-transform: uppercase;
-    padding: 0px 35px;
+    padding: 0px 40px;
     line-height: 40px;
 }
 
 /* ranking */
+.ranking {
+    padding-top: 100px;
+}
+
 .ranking-flex {
     display: flex;
     justify-content: center;
@@ -289,8 +300,51 @@ figure > img {
 .album-title {
     font-size: 22px;
     color: white;
-    margin-bottom: 20px;
     font-weight: 800;
+}
+
+.category-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px 0px 20px 11px;
+}
+
+.suggestions {
+    opacity: 0.7;
+    font-size: 12px;
+    color: white;
+}
+
+.debug .album-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.debug .card-album {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     text-align: center;
+}
+
+.debug .card-title {
+    color: white;
+    font-size: 15px;
+}
+
+.debug .card-subtitle {
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    
 }
 
 
@@ -529,35 +583,3 @@ figure > img {
 } */
 
 
-
-.debug .col {
-    border: 1px solid red;
-    background-color: aqua;
-    
-}
-
-
-.debug .album-flex {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid white;
-}
-
-.debug .card-album {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 10px;
-
-}
-
-.debug .card-title {
-    color: white;
-    font-size: 15px;
-}
-
-.debug .card-subtitle {
-    color: white;
-    opacity: 0.7;
-    font-size: 12px;
-}
