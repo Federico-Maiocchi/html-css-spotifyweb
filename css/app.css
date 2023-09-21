@@ -151,6 +151,26 @@ figure > img {
 .app-menu-img {
     width: 26px;
     aspect-ratio: 1;
+    position: relative;
+}
+
+/* .app-menu-img img::before {
+    
+} */
+.mini-bar {
+    display: flex;
+    align-items: center;
+    width: 26px;
+}
+
+.mini-bar::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: aquamarine;
+    height: 100%;
+    width: 1px;
+    left: -16px;
 }
 
 .library {
@@ -280,6 +300,11 @@ figure > img {
     padding: 15px 0px 15px 0px;
 }
 
+.mini-bar-horizzontal {
+    
+
+}
+
 .ranking-item {
     color: white;
     opacity: 0.7;
@@ -354,12 +379,12 @@ figure > img {
 
 
 
-.debug .card-title {
+.card-title {
     color: white;
     font-size: 15px;
 }
 
-.debug .card-subtitle {
+.card-subtitle {
     color: white;
     opacity: 0.7;
     font-size: 12px;
