@@ -317,18 +317,42 @@ figure > img {
     color: white;
 }
 
-.debug .album-flex {
+.album-flex {
     display: flex;
     flex-wrap: wrap;
 }
 
-.debug .card-album {
+.card-album {
      display: flex;
      flex-direction: column;
      align-items: center;
      gap: 10px;
      text-align: center;
+     
 }
+
+.figure-relative {
+    position: relative;
+}
+
+.play-brano {
+    top: 50%;
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.card-album:hover .play-brano{
+    z-index: 1;  
+}
+
+.card-album:hover img{
+    filter: opacity(0.4) invert(0.1) grayscale(1);
+}
+
+
 
 .debug .card-title {
     color: white;
