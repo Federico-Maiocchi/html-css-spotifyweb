@@ -169,7 +169,7 @@ figure > img {
     display: block;
     background-color: aquamarine;
     height: 100%;
-    width: 1px;
+    width: 5px;
     left: -16px;
 }
 
@@ -273,6 +273,7 @@ figure > img {
     display: flex;
     justify-content: flex-end;
     position: absolute;
+    z-index: 999;
     top: 0;
     right: 0;
     left: 0;
@@ -300,9 +301,14 @@ figure > img {
     padding: 15px 0px 15px 0px;
 }
 
-.mini-bar-horizzontal {
-    
-
+.mini-bar-horizzontal::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: aquamarine;
+    height: 5px;
+    width: 80%;
+    bottom: 4px;
 }
 
 .ranking-item {
@@ -312,6 +318,7 @@ figure > img {
     font-weight: 600;
     font-size: 14px;
     padding: 10px;
+    position: relative;
 }
 
 /* album */
@@ -353,7 +360,6 @@ figure > img {
      align-items: center;
      gap: 10px;
      text-align: center;
-     
 }
 
 .figure-relative {
@@ -361,10 +367,10 @@ figure > img {
 }
 
 .play-brano {
-    top: 50%;
     position: absolute;
-    font-size: 50px;
+    font-size: 100px;
     left: 50%;
+    top: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
 }
@@ -376,8 +382,6 @@ figure > img {
 .card-album:hover img{
     filter: opacity(0.4) invert(0.1) grayscale(1);
 }
-
-
 
 .card-title {
     color: white;
