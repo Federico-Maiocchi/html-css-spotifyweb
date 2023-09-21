@@ -494,11 +494,13 @@ figure > img {
     height: 4px;
     width: var(--time-bar);
     position: absolute;
+    border-radius: 70px;
 }
 
 .time-bar-gray {
     background-color: grey;
     height: 4px;
+    border-radius: 70px;
 }
 
 .time-hand {
@@ -515,6 +517,7 @@ figure > img {
 
 .time-bar:hover .time-hand {
     display: block;
+    
 }
 
 .time-bar:hover .time-bar-white {
